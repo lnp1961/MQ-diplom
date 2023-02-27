@@ -7,16 +7,14 @@ body {
 /* Подключение внешних шрифтов */
 @font-face {
   font-family: "OpenSans";
-  src:"https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff" ;
+  src: url(../fonts/OpenSans-Bold.woff);
   font-weight: 700;
-  font-style: Bold;
   font-display: swap;
 }
 @font-face {
   font-family: "OpenSans";
-  src:"https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff" ;
+  src: url(../fonts/OpenSans-Regular.woff);
   font-weight: 400;
-  font-style: Regular;
   font-display: swap;
 }
 /*Универсальным селектором сбрасываем стандартные стили браузера*/
@@ -147,7 +145,6 @@ body {
   margin: auto 20px;
 }
 .menu-list_item a {
-  font-style: regular;
   font-size: 13px;
   text-decoration: none;
   text-transform: uppercase;
