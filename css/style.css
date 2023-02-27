@@ -193,7 +193,7 @@ h1 {
   margin: 13px auto 25px;
 }
 <!--Контейнер с карточками ТРЕНД-ов-->
-.container-trends {
+.container__trends {
   display: flex;
   justify-content: space-between;
   position: relative;  
