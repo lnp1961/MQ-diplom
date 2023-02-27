@@ -26,7 +26,7 @@ body {
 .header {
   position: relative;
   background-color: #000000;
-  background-image: url(../images/banner-bg.jpg);
+  background-image: url(../img/banner-bg.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;/*Размер по ширине экрана*/
@@ -213,7 +213,7 @@ h1 {
   display: flex;
   margin-right: 3px;
   background-color: rgba(0, 0, 0, 0);
-  background-image: url(../images/trend1.jpg);
+  background-image: url(../img/trend1.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;/*Размер по ширине экрана*/
@@ -237,7 +237,7 @@ h1 {
   display: flex;
   margin-right: 3px;
   background-color: rgba(0, 0, 0, 0);
-  background-image: url(../images/trend2.jpg);
+  background-image: url(../img/trend2.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;/*Размер по ширине экрана*/
@@ -251,7 +251,7 @@ h1 {
   display: flex;
   margin-right: 3px;
   background-color: rgba(0, 0, 0, 0.6);
-  background-image: url(../images/trend3.jpg);
+  background-image: url(../img/trend3.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;/*Размер по ширине экрана*/
@@ -264,7 +264,7 @@ h1 {
   width: 100%;
   display: flex;
   background-color: rgba(0, 0, 0, 0.6);
-  background-image: url(../images/trend4.jpg);
+  background-image: url(../img/trend4.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;/*Размер по ширине экрана*/
