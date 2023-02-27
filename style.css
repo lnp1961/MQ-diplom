@@ -1,0 +1,333 @@
+/*Задаем общий шрифт, его цвет и внешние отсупы*/
+body {
+  font-family: OpenSans, Arial, sans-serif;
+  color: #ffffff;
+  margin: 0;
+}
+/* Подключение внешних шрифтов */
+@font-face {
+  font-family: "OpenSans";
+  src:"https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff" ;
+  font-weight: 700;
+  font-style: Bold;
+  font-display: swap;
+}
+@font-face {
+  font-family: "OpenSans";
+  src:"https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff" ;
+  font-weight: 400;
+  font-style: Regular;
+  font-display: swap;
+}
+/*Универсальным селектором сбрасываем стандартные стили браузера*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.header {
+  position: relative;
+  background-color: #000000;
+  background-image: url(../images/banner-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;/*Размер по ширине экрана*/
+ }
+.header::after {
+  content: "";
+  display: block;
+  background-color:#000000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom:0;
+  opacity: 0.6;
+}
+.logo-menu {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+  width: 1170px;
+  padding: 25px 15px 0 15px;
+}
+.logo {
+  width: 179px;
+}
+
+/* Скрываем чекбокс */
+#menu__toggle {
+  opacity: 0;
+  display: none;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu-list {
+  visibility: visible;
+  left: 0;
+}
+/* Стилизуем кнопку */
+.menu__btn {
+  display: flex; /*Используем flex для центрирования содержимого*/
+  align-items: center; /*Центрируем содержимое кнопки*/
+  position: fixed; /*Фиксируем положение кнопки*/
+  top: 35px;
+  right: 20px;
+
+  width: 23px; /*Размер кнопки*/
+  height: 23px;
+
+  cursor: pointer; /*Курсор в виде руки*/
+  z-index: 1;
+}
+
+ /* Скрываем бургер-меню для мобильных устройств при ширине экрана больше 768рх */
+@media (min-width: 768px) {
+  .menu__btn {
+    display: none;
+  }
+  h1 {
+    font-size: 40px;
+    line-height: 55px;
+  }
+}
+
+/* Скрываем основное меню и делаем видимым бургер-меню для ширины экрана размером до 768рх */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+  h1 {
+    font-size: 26px;
+    line-height: 36px;
+  }
+}
+
+/*Добавляем "Гамбургер"*/
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+
+  width: 100%; /*Высота и ширина линий гамбургера*/
+  height: 3px;
+
+  background-color: #ffffff;
+
+  transition-duration: .25s;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+
+.menu-list {
+  display: flex;
+  list-style-type: none;
+  font-size: 13px;
+}
+.menu-list_item {
+  margin: auto 20px;
+}
+.menu-list_item a {
+  font-style: regular;
+  font-size: 13px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+/* Добавил стиль для псевдокласса hover */
+.menu-list_item a:hover{
+  text-decoration: underline;
+}
+/* Стилизация блока c заголовком header */
+.header-title {
+  width: 700px;
+  position: relative;
+  z-index: 2;
+  margin: 0 auto ;
+  padding: 50px 0 144px 0;
+  }
+/* Стилизуем текст заголовка header */
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 75px;
+}
+
+
+/*Заголовок блока ТРЕНДОВ*/
+.trends-title {
+  font-size: 20px;
+  line-height: 29px;
+  color: #0f0d0e;
+  font-weight: 700;
+  font-family: "Open Sans";
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto 13px;
+  padding-top: 60px;
+  }
+.trends-title::after {
+  content: "";
+  display: block;
+  width: 66px;
+  height: 3px;
+  background-color: #b59f5b;
+  margin: 13px auto 25px;
+}
+<!--Контейнер с карточками ТРЕНД-ов-->
+.container-trends {
+  display: flex;
+  justify-content: space-between;
+  position: relative;  
+  max-width: 1660px;
+  min-width: 320px;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  /*margin: 0 auto;*/
+  }
+
+.trend-card-garden {
+  max-width: 415px;
+  min-width: 320px;
+  min-height: 320px;
+  width: 100%;
+  display: flex;
+  margin-right: 3px;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-image: url(../images/trend1.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;/*Размер по ширине экрана*/
+}
+
+.trend-card-garden:after {
+ content: "";
+  display: block;
+  background-color:#000000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  opacity: 0.6;
+}
+  .trend-card-cheeses {
+  max-width: 415px;
+  min-width: 320px;
+  min-height: 320px;
+  width: 100%;
+  display: flex;
+  margin-right: 3px;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-image: url(../images/trend2.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;/*Размер по ширине экрана*/
+}
+
+  .trend-card-journey {
+  max-width: 415px;
+  min-width: 320px;
+  min-height: 320px;
+  width: 100%;
+  display: flex;
+  margin-right: 3px;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-image: url(../images/trend3.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;/*Размер по ширине экрана*/
+}
+
+ .trend-card-vitamin {
+  max-width: 415px;
+  min-width: 320px;
+  min-height: 320px;
+  width: 100%;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-image: url(../images/trend4.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;/*Размер по ширине экрана*/
+}
+.category {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 35px;
+  margin-top: 50px;
+}
+.category-item {
+  margin-right: 20px;
+}
+.category-item:last-child {
+  margin-right: 0;
+}
+.category-item {
+  text-decoration: none;
+  font-size: 14px;
+  color: #b59f5b;
+  font-weight: bold;
+  line-height: 0;
+  text-transform: uppercase;
+}
+.category-item:hover {
+  text-decoration: underline;
+}
+.card__name {
+font-size: 20px;
+line-height: 24px;
+color: #ffffff;
+text-transform: uppercase;
+text-align: left;
+padding-top: 15px;
+margin-left: 35px;
+
+}
+
+.card__name:hover {
+font-size: 20px;
+line-height: 24px;
+color: #b59f5b;
+}
+
+.card__preview {
+width: 370px;
+height: 146px;
+background-color: rgba(0,0,0,0);
+border: 3px solid #b59f5b;
+margin-left: 22px;
+margin-right: 23px;
+margin-top: 154px;
+}
+.card__preview-cheeses{
+width: 370px;
+height: 170px;
+background-color: rgba(0,0,0,0);
+border: 3px solid #b59f5b;
+margin-left: 22px;
+margin-right: 23px;
+margin-top: 130px;
+}
