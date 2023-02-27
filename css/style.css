@@ -313,7 +313,7 @@ color: #b59f5b;
 .card__preview {
 width: 370px;
 height: 146px;
-background-color: rgba(0,0,0,0.6);
+background-color: rgba(0,0,0,0);
 border: 3px solid #b59f5b;
 margin-left: 22px;
 margin-right: 23px;
@@ -322,7 +322,7 @@ margin-top: 154px;
 .card__preview-cheeses{
 width: 370px;
 height: 170px;
-background-color: rgba(0,0,0,0.6);
+background-color: rgba(0,0,0,0);
 border: 3px solid #b59f5b;
 margin-left: 22px;
 margin-right: 23px;
