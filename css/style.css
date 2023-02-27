@@ -212,7 +212,7 @@ h1 {
   width: 100%;
   display: flex;
   margin-right: 3px;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0);
   background-image: url(../images/trend1.jpg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -236,7 +236,7 @@ h1 {
   width: 100%;
   display: flex;
   margin-right: 3px;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0);
   background-image: url(../images/trend2.jpg);
   background-repeat: no-repeat;
   background-position: center center;
