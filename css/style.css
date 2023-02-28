@@ -189,7 +189,7 @@ h1 {
   background-color: #b59f5b;
   margin: 13px auto 25px;
 }
-<!--Контейнер с карточками ТРЕНД-ов-->
+/*Контейнер с карточками ТРЕНД-ов*/
 .container__trends {
   display: flex;
   justify-content: space-between;
