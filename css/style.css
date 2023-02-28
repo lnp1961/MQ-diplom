@@ -135,7 +135,6 @@ body {
   content: '';
   top: 8px;
 }
-
 .menu-list {
   display: flex;
   list-style-type: none;
@@ -170,8 +169,6 @@ h1 {
   font-weight: bold;
   line-height: 75px;
 }
-
-
 /*Заголовок блока ТРЕНДОВ*/
 .trends-title {
   font-size: 20px;
@@ -202,14 +199,12 @@ h1 {
   width: 100%;
   flex-direction: row;
   flex-wrap: nowrap;
-  /*margin: 0 auto;*/
+  margin: 0 auto;
   }
-
 .trend-card-garden {
-  max-width: 415px;
   min-width: 320px;
   min-height: 320px;
-  width: 100%;
+  width: calc((100% - 9px)/4);
   display: flex;
   margin-right: 3px;
   background-color: rgba(0, 0, 0, 0);
@@ -218,22 +213,10 @@ h1 {
   background-position: center center;
   background-size: cover;/*Размер по ширине экрана*/
 }
-
-.trend-card-garden:after {
- content: "";
-  display: block;
-  background-color:#000000;
-  position: absolute;
-  top: 0;
-  left: 0;
-  
-  opacity: 0.6;
-}
   .trend-card-cheeses {
-  max-width: 415px;
   min-width: 320px;
   min-height: 320px;
-  width: 100%;
+  width: calc((100% - 9px)/4);
   display: flex;
   margin-right: 3px;
   background-color: rgba(0, 0, 0, 0);
@@ -242,12 +225,10 @@ h1 {
   background-position: center center;
   background-size: cover;/*Размер по ширине экрана*/
 }
-
   .trend-card-journey {
-  max-width: 415px;
   min-width: 320px;
   min-height: 320px;
-  width: 100%;
+  width: calc((100% - 9px)/4);
   display: flex;
   margin-right: 3px;
   background-color: rgba(0, 0, 0, 0);
@@ -256,12 +237,10 @@ h1 {
   background-position: center center;
   background-size: cover;/*Размер по ширине экрана*/
 }
-
  .trend-card-vitamin {
-  max-width: 415px;
   min-width: 320px;
   min-height: 320px;
-  width: 100%;
+  width:calc((100% - 9px)/4);
   display: flex;
   background-color: rgba(0, 0, 0, 0);
   background-image: url(../img/trend4.jpg);
@@ -301,15 +280,12 @@ text-transform: uppercase;
 text-align: left;
 padding-top: 15px;
 margin-left: 35px;
-
 }
-
 .card__name:hover {
 font-size: 20px;
 line-height: 24px;
 color: #b59f5b;
 }
-
 .card__preview {
 width: 370px;
 height: 146px;
