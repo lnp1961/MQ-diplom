@@ -135,6 +135,7 @@ body {
   content: '';
   top: 8px;
 }
+
 .menu-list {
   display: flex;
   list-style-type: none;
@@ -169,6 +170,7 @@ h1 {
   font-weight: bold;
   line-height: 75px;
 }
+
 /*Заголовок блока ТРЕНДОВ*/
 .trends-title {
   font-size: 20px;
@@ -201,6 +203,7 @@ h1 {
   flex-wrap: nowrap;
   margin: 0 auto;
   }
+
 .trend-card-garden {
   min-width: 320px;
   min-height: 320px;
@@ -213,6 +216,7 @@ h1 {
   background-position: center center;
   background-size: cover;/*Размер по ширине экрана*/
 }
+
   .trend-card-cheeses {
   min-width: 320px;
   min-height: 320px;
@@ -225,6 +229,7 @@ h1 {
   background-position: center center;
   background-size: cover;/*Размер по ширине экрана*/
 }
+
   .trend-card-journey {
   min-width: 320px;
   min-height: 320px;
@@ -237,6 +242,7 @@ h1 {
   background-position: center center;
   background-size: cover;/*Размер по ширине экрана*/
 }
+
  .trend-card-vitamin {
   min-width: 320px;
   min-height: 320px;
@@ -280,12 +286,15 @@ text-transform: uppercase;
 text-align: left;
 padding-top: 15px;
 margin-left: 35px;
+
 }
+
 .card__name:hover {
 font-size: 20px;
 line-height: 24px;
 color: #b59f5b;
 }
+
 .card__preview {
 width: 370px;
 height: 146px;
